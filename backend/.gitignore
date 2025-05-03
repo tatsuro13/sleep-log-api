@@ -1,0 +1,29 @@
+# Node.js の依存ライブラリ
+node_modules/
+
+# Serverless Framework の成果物
+.serverless/
+
+# ビルド成果物
+/dist
+/build
+
+# ログファイル
+*.log
+
+# macOS の特有ファイル
+.DS_Store
+
+# IDE 設定
+.vscode/
+.idea/
+
+# 環境変数ファイル
+.env
+
+# 一時ファイルやバックアップ
+*.bak
+*.tmp
+
+# テスト結果
+coverage/

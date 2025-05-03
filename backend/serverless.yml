@@ -1,0 +1,21 @@
+service: sleep-log-api
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-northeast-1
+  stage: dev
+
+functions:
+  api:
+    handler: src/handler.main
+    events:
+      - httpApi: '*'
+
+# plugins:
+  # - serverless-esbuild
+
+custom:
+  esbuild:
+    bundle: true
+    target: node18
